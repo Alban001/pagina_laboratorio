@@ -24,11 +24,11 @@ if (isset($_GET['keyword'])) {
         echo "<table border='5'>";
         while ($row = $result->fetch_assoc()) {
            echo "<tr>";
-                    echo "<th>NOMBRE PRODUCTO: </th>";
+                    echo "<th style='color:#3811f8;'>NOMBRE PRODUCTO: </th>";
                     echo "<th>" . $row['Name'] . "</th>";
-                    echo "<th>CODIGO: </th>";
+                    echo "<th style='color:#3811f8;'>CODIGO: </th>";
                     echo "<th>" . $row['Code'] . "</th>";
-                    echo "<th>PRECIO: </th>";
+                    echo "<th style='color:#3811f8;'>PRECIO: </th>";
                     echo "<th>" . $row['Precio'] . "</th>";
 
             echo "</tr>";
