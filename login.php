@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $host = "localhost";
     $dbusername = "root";
     $dbpassword = "root";
-    $dbname = "tienda";
+    $dbname = "laboratoriodev";
 
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $pass = md5($password);  // encriptacion con md5 
     
     
-    $query = "SELECT * FROM users WHERE Code='$username' AND password = '$pass'";
+    $query = "SELECT * FROM user WHERE Code='$username' AND Password = '$pass'";
     echo $query;
     $result = $conn->query($query);
 
