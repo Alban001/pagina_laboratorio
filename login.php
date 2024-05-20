@@ -1,4 +1,5 @@
 <?php
+  session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -6,7 +7,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // conexion con la base de datos
 
     $host = "localhost";
     $dbusername = "root";
@@ -29,12 +29,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if($result->num_rows == 1){
         // Login aceptado
-       
+
+        $_SESSION['username'] = $username;
+
         header("Location: buscarProduct.php");
         exit();
     }else{
         // Login rechazado
-        header("Location: error.html");
+        header("Location: error.php");
         exit();
     }
     $conn->close();
