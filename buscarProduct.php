@@ -1,3 +1,10 @@
+<?php
+ session_start();
+ if (!isset($_SESSION['username'])) {
+    header('Location: index.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +24,7 @@
     </form>
     </div>
     <?php
-      session_start();
+    
 // Establecer coneccion
 $servername = "localhost";
 $username = "root";
