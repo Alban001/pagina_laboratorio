@@ -152,7 +152,7 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1000px) {
     .container {
-        left: 20%;
+        left: 30%;
         margin: auto;
         width: 25rem;
         top: 10%;
@@ -166,7 +166,7 @@ body {
     table {
         border: solid black 2px;
         overflow-y: scroll;
-        width: 20rem;
+        width: 80%;
         margin-top: 9rem;
         margin-left: 10%;
         padding: 10px;
@@ -200,7 +200,7 @@ body {
     table {
         border: solid black 2px;
         overflow-y: scroll;
-        width: 15rem;
+        width: 80%;
         margin-top: 13rem;
         margin-left: 10%;
         padding: 10px;
@@ -247,7 +247,7 @@ body {
     table {
         border: solid black 2px;
         overflow-y: scroll;
-        width: 10rem;
+        width: 80%;
         margin-top: 11rem;
         margin-left: 10%;
         padding: 10px;
