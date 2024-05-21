@@ -150,7 +150,7 @@ body {
 /* Tablets breakpoint */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .container {
         left: 20%;
         margin: auto;
