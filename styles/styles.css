@@ -17,11 +17,6 @@ header>nav>li {
     }
 }
 
-.container-login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .container {
     left: 35%;
@@ -155,7 +150,7 @@ body {
 /* Tablets breakpoint */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 900px) {
     .container {
         left: 20%;
         margin: auto;
