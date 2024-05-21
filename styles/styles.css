@@ -5,7 +5,13 @@ body {
     background-color: rgba(39, 109, 136, 0.93);
 
 }
-
+header{
+    height: 10rem;
+    background-color: rgba(39, 109, 136, 0.93);
+    position: fixed;
+    width: 100vw;
+    top:0;
+}
 header>nav>li {
     list-style: none;
     display: flex;
@@ -167,7 +173,7 @@ body {
         border: solid black 2px;
         overflow-y: scroll;
         width: 80%;
-        margin-top: 9rem;
+        margin-top: 13rem;
         margin-left: 10%;
         padding: 10px;
         border-collapse: collapse;
@@ -201,7 +207,7 @@ body {
         border: solid black 2px;
         overflow-y: scroll;
         width: 80%;
-        margin-top: 13rem;
+        margin-top: 15rem;
         margin-left: 10%;
         padding: 10px;
         border-collapse: collapse;
@@ -248,7 +254,7 @@ body {
         border: solid black 2px;
         overflow-y: scroll;
         width: 80%;
-        margin-top: 11rem;
+        margin-top: 15rem;
         margin-left: 10%;
         padding: 10px;
         border-collapse: collapse;
