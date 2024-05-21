@@ -26,13 +26,12 @@
     <?php
     
 // Establecer coneccion
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "laboratoriodev";
+$host = "190.104.140.216";
+    $dbusername = "solucionlab";
+    $dbpassword = "solucionlab*2020";
+    $dbname = "solucionlabpro";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
+    $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 // Checkea coneccion
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -45,7 +44,7 @@ if (isset($_GET['keyword'])) {
 
 
     $keyword = $_GET['keyword'];
-    $sql = "SELECT it.*, SUM(st.Qty) Stock FROM item it 
+    $sql = "SELECT it.*, SUM(st.Qty) Stock FROM Item it 
         LEFT JOIN Stock st ON st.ArtCode = it.Code
     WHERE it.Name LIKE '%$keyword%' OR it.Code LIKE  '%$keyword%'
     GROUP BY it.Code";

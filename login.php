@@ -8,10 +8,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $password = $_POST['password'];
 
 
-    $host = "localhost";
-    $dbusername = "root";
-    $dbpassword = "root";
-    $dbname = "laboratoriodev";
+    $host = "190.104.140.216";
+    $dbusername = "solucionlab";
+    $dbpassword = "solucionlab*2020";
+    $dbname = "solucionlabpro";
 
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
@@ -23,7 +23,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $pass = md5($password);  // encriptacion con md5 
     
     
-    $query = "SELECT * FROM user WHERE Code='$username' AND Password = '$pass'";
+    $query = "SELECT * FROM User WHERE Code='$username' AND Password = '$pass'";
+    
     echo $query;
     $result = $conn->query($query);
 
@@ -36,7 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         exit();
     }else{
         // Login rechazado
-        header("Location: error.php");
+        echo $query;
+        //header("Location: error.php");
         exit();
     }
     $conn->close();
