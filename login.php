@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $dbpassword = "solucionlab*2020";
     $dbname = "solucionlabpro";
 
-    $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
+    $conn =  mysqli_connect($host, $dbusername, $dbpassword, $dbname);
 
     if($conn->connect_error){
         die("Conection failed: ". $conn->connect_error);
