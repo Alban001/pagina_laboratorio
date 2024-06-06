@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }else{
         // Login rechazado
         echo $query;
-        //header("Location: error.php");
+        header("Location: error.php");
         exit();
     }
     $conn->close();
