@@ -4,6 +4,7 @@
     header('Location: index.php');
     exit;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +16,17 @@
     <title>Buscar productos</title>
 </head>
 <body>
-    <header><nav><li><a href="cerrar_session.php">Cerrar Sesión</a></li></nav></header>
-    <div class="container">
+    <header>
+        <nav>
+        <div class="container-nav">
+        <li>Buscar Cliente</li>
+        <li>Busqueda Producto</li>
+        <li>Enviar orden</li>
+        </div>
+        <li><a href="cerrar_session.php">Cerrar Sesión</a></li></nav>
+    </header>
+    
+    <div class="container-buscarproducto">
     <h1 style='color:white;'>Buscar Productos/Servicios</h1>
     <form action="" method="GET">
         <input type="text" name="keyword" placeholder="Ingresa el producto...">
@@ -57,6 +67,7 @@ if (isset($_GET['keyword'])) {
         echo "<table class='table-class' border='8'>";
         echo "<thead>";
                 echo"<tr>";
+                     echo "<th scope='col'>Cart</th>";
                      echo "<th scope='col'>Codigo</th>";
                      echo "<th scope='col'>Nombre</th>";
                      echo "<th scope='col'>Precio</th>";
@@ -66,6 +77,7 @@ if (isset($_GET['keyword'])) {
         echo "<tbody>";
         while ($row = $result->fetch_assoc()) {       
            echo "<tr>";
+                    echo "<th><img src='cart.png' height=40 width=40></img></th>";
                     echo "<th>" . $row['Code'] . "</th>";
                     echo "<th>" . $row['Name'] . "</th>";
                     echo "<th>" . $row['Price'] . "</th>";

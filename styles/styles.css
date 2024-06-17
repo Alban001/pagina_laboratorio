@@ -3,15 +3,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(39, 109, 136, 0.93);
+    
 
 }
-header{
+
+header {
     height: 10rem;
     background-color: rgba(39, 109, 136, 0.93);
     position: fixed;
     width: 100vw;
-    top:0;
+    top: 0;
 }
+
 header>nav>li {
     list-style: none;
     display: flex;
@@ -23,19 +26,42 @@ header>nav>li {
     }
 }
 
+.container-nav {
+    margin-left: 25%;
+    margin-top: 5%;
 
-.container {
+    li{
+        padding: 10px 20px;
+        background-color: rgb(9, 136, 147);
+        border: none;
+        list-style: none;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        display: inline;
+        margin-left: 5rem;
+        &:hover {
+            background-color: #0045b3;
+        }
+    }
+}
+
+
+.container-buscarproducto {
+    
     left: 35%;
     margin: auto;
     width: 30rem;
-    top: 3%;
+    top: 20%;
     height: auto;
     padding: 10px;
     background: linear-gradient(90deg, rgb(10, 138, 125) 0%, rgba(90, 186, 223, 0.93) 100%);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-
+  
 }
 
 h1 {
@@ -105,7 +131,7 @@ table {
     border: solid black 2px;
     overflow-y: scroll;
     width: 60%;
-    margin-top: 12rem;
+    margin-top: 20%;
     margin-left: 20%;
     padding: 20px;
     border-collapse: collapse;
