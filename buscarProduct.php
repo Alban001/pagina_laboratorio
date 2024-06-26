@@ -91,15 +91,15 @@ if (isset($_GET['keyword'])) {
         echo "<tbody>";
         while ($row = $result->fetch_assoc()) {       
            echo "<tr>";
-                    echo "<th><img src='cart.png' height=40 width=40  id='openModalBtn'></img></th>";
+                    echo "<th ><img class='openModalBtn' src='cart.png' height=40 width=40 ></img></th>";
                     echo "<th>" . $row['Code'] . "</th>";
                     echo "<th>" . $row['Name'] . "</th>";
                     echo "<th>" . $row['Price'] . "</th>";
                     echo "<th>" . $row['Stock'] . "</th>";
             echo "</tr>";
-            echo "</tbody>";
+            
         }
-       
+        echo "</tbody>";
         echo "</table>";
     } else {
         header("Location: notfound.php");
