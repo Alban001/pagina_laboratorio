@@ -35,6 +35,18 @@
         <button type="submit" >Buscar</button>
     </form>
     </div>
+
+        <!--MODAL-->
+
+        <div class="modal"  id="myModal" >
+             <div class="modal-content">
+             <span class="close">&times;</span>
+             <p>Ingresa cantidad</p> 
+            <input type="number" value='numero' > <button>enviar</button> 
+             </div>
+        </div>
+
+
     <?php
     
 // Establecer coneccion
@@ -79,7 +91,7 @@ if (isset($_GET['keyword'])) {
         echo "<tbody>";
         while ($row = $result->fetch_assoc()) {       
            echo "<tr>";
-                    echo "<th><img src='cart.png' height=40 width=40></img></th>";
+                    echo "<th><img src='cart.png' height=40 width=40  id='openModalBtn'></img></th>";
                     echo "<th>" . $row['Code'] . "</th>";
                     echo "<th>" . $row['Name'] . "</th>";
                     echo "<th>" . $row['Price'] . "</th>";
@@ -97,6 +109,6 @@ if (isset($_GET['keyword'])) {
 
 $conn->close();
 ?>
-
+<script src="scripts.js"></script>
 </body>
 </html>
