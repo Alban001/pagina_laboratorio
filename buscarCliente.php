@@ -5,6 +5,11 @@
     exit;
 }
 
+if(isset($_POST['submit'])){
+    header("Location: buscarCliente.php");
+    exit;
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,12 +24,11 @@
     <header>
         <nav>
         <div class="container-nav">
-        <form method="post">
-        <button type="submit" name="cliente">Buscar Cliente</button>
-        <button type="submit" name="producto">Busqueda Producto</button>
-        <button type="submit" name="orden">Ver Orden</button>
-       
-    </form>
+             <a href="buscarCliente.php"><input type='submit' name='cliente' value='cliente' placeholder='Buscar Cliente' /></a>
+   
+             <a href="buscarProduct.php"><input type='submit' name='producto' value='producto' placeholder='Buscar Producto' /></a>
+     
+            <a href="notfound.php"><input type='submit' name='orden' value='orden' placeholder='Ver Orden' /></a>
         </div>
         <li><a href="cerrar_session.php">Cerrar Sesión</a></li></nav>
     </header>
