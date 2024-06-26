@@ -31,7 +31,7 @@ if(isset($_SESSION['username'])){
     <style>
         
         body{
-            background-color: rgba(39, 109, 136, 0.93);
+            background-color: rgba(27, 72, 90, 0.93);  
         }
         .container-login{
             display: flex;
