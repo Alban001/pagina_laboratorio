@@ -8,12 +8,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $password = $_POST['password'];
 
 
-    $host = "190.104.140.216";
-    $dbusername = "solucionlab";
-    $dbpassword = "solucionlab*2020";
-    $dbname = "solucionlabpro";
+    $host = "190.104.140.200";
+    $dbusername = "root";
+    $dbpassword = "root*2020";
+    $dbname = "colorcitypro";
 
-    $conn =  mysqli_connect($host, $dbusername, $dbpassword, $dbname);
+    $conn =  new mysqli($host, $dbusername, $dbpassword, $dbname);
 
     if($conn->connect_error){
         die("Conection failed: ". $conn->connect_error);
@@ -42,6 +42,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         exit();
     }
     $conn->close();
-}
-
-?>
+}?>
