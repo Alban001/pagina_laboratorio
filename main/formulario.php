@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/formulario.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="../styles/formulario.css?v=<?php echo time(); ?>">
   <title>Simple HTML Table</title>
 </head>
 <body>
@@ -46,7 +46,7 @@
         <td>item</td>
         <td></td>
         <td>item</td>
-        <th><img src='trash.png' height=30 width=30 ></img></th>
+        <th><img src='../img/trash.png' height=30 width=30 ></img></th>
       </tr>
     </tbody>
   </table>
