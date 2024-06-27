@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="tbl-container">
-  <h2>Dato Clientes</h2>
+  <h2>Datos Clientes</h2>
   <table class="tabla-clientes" border="1">
     <thead>
       <tr>
@@ -27,7 +27,7 @@
       </tr>
     </tbody>
   </table>
-  <h2>Dato Artículos</h2>
+  <h2>Datos Artículos</h2>
   <table class="tabla-articulos" border="1">
     <thead>
       <tr>
