@@ -109,6 +109,6 @@ if (isset($_GET['keyword'])) {
 
 $conn->close();
 ?>
-<script src="scripts/scripts.js"></script>
+<script src="../scripts/scripts.js"></script>
 </body>
 </html>
