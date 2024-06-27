@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
  openModalBtn.forEach(function(img) {
     img.addEventListener("click", function() {
       modal.style.display = "block";
-       
+      openModalBtn.style.backgroundColor="gree";
     });
+    
   });
   
   closeModalBtn.addEventListener("click", function() {

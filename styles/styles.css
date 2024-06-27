@@ -3,15 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(27, 72, 90, 0.93);  
-
-}
-
-header {
-    height: 10rem;
-    background-color: rgb(33, 78, 123);
-    position: fixed;
-    width: 100vw;
-    top: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 header>nav>li {
@@ -23,7 +15,7 @@ header>nav>li {
     a {
         color: white;
     }
-}
+}  
 
 .container-nav {
 
@@ -131,6 +123,7 @@ button[type="submit"]:hover {
 }
 
 table {
+
     border: solid black 2px;
     overflow-y: scroll;
     width: 60%;

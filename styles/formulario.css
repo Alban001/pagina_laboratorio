@@ -1,0 +1,97 @@
+body{
+    background-color: #b1b6b8;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        text-align: left;
+        padding-left: 3%;
+        font-size: medium;
+        
+    }
+    
+    .tbl-container{
+        margin-top: 8%;
+        border: solid black 1px;
+        width: 50%;
+        height: auto;
+        background-color: #e4f0f5;
+        box-shadow: inset;
+        button{
+            border: none;
+            padding: 11px;
+            background-color: rgb(105, 136, 96);
+            color: white;
+            margin: 1.3rem;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                font-size: x-large;
+                padding-top: 0.8rem;
+                padding-left: 4rem;
+            }
+            button{
+                border: none;
+                padding: 11px;
+                background-color: rgb(100, 104, 225);
+                color: white;
+                margin: 1.3rem;
+            }
+            #enviar{
+                background-color: rgb(197, 125, 125);
+            }
+        }
+    }
+    table {
+        border: solid black 2px;
+        overflow-y: scroll;
+        width: 100%;
+        margin-top: 5%;
+       
+        border-collapse: collapse;
+        border: 2px solid white;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    
+    
+    }
+    
+    thead {
+        background-color: rgb(33, 78, 123);
+        color: #fff;
+    }
+    
+    tbody {
+        background-color: #e4f0f5;
+    
+    }
+    
+    th,
+    td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+    }
+    
+    td {
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+    
+    .title {
+        margin-top: 3rem;
+        color: white;
+        text-align: center;
+    }
+    .tabla-clientes{
+        
+    thead {
+        background-color: rgb(45, 17, 60);
+        color: #fff;
+    }
+    }
+}

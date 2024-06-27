@@ -23,7 +23,7 @@
    
              <a href="buscarProduct.php"><input type='submit' name='producto' value='producto' placeholder='Buscar Producto' /></a>
      
-            <a href="notfound.php"><input type='submit' name='orden' value='orden' placeholder='Ver Orden' /></a>
+            <a href="formulario.php" ><input type='submit' name='orden' value='orden' placeholder='Ver Orden' /></a>
         </div>
         <li><a href="cerrar_session.php">Cerrar Sesión</a></li></nav>
     </header>
