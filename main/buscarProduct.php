@@ -42,7 +42,7 @@
              <div class="modal-content">
              <span class="close">&times;</span>
              <p>Ingresa cantidad</p> 
-            <input type="number" value='numero' > <button>enviar</button> 
+            <input type="number" name='numero' id='numero' > <button id='enviar'>enviar</button> 
              </div>
         </div>
 

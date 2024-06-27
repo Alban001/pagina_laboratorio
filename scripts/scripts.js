@@ -22,4 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
       
     }
   });
+
+  var cantidad = document.getElementById('numero')
+  var enviar = document.getElementById('enviar')
+
+  enviar.onclick=()=>{
+    alert(`el numero es ${cantidad.value}`)
+  }
 });

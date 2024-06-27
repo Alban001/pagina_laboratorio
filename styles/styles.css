@@ -5,7 +5,12 @@ body {
     background-color: rgba(27, 72, 90, 0.93);  
     font-family: "Roboto", sans-serif;
 }
-
+header{
+   background-color: rgba(21, 48, 59, 0.379);
+   position:fixed;
+   width: 100%;
+   top: 0;
+}
 header>nav>li {
     list-style: none;
     display: flex;
