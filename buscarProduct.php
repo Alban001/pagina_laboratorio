@@ -19,11 +19,11 @@
     <header>
         <nav>
         <div class="container-nav">
-        <form method="post">
-            <button type="submit" name="cliente">Buscar Cliente</button>
-             <button type="submit" name="producto">Busqueda Producto</button>
-             <button type="submit" name="orden">Ver Orden</button>
-        </form>
+             <a href="buscarCliente.php"><input type='submit' name='cliente' value='cliente' placeholder='Buscar Cliente' /></a>
+   
+             <a href="buscarProduct.php"><input type='submit' name='producto' value='producto' placeholder='Buscar Producto' /></a>
+     
+            <a href="formulario.php" ><input type='submit' name='orden' value='orden' placeholder='Ver Orden' /></a>
         </div>
         <li><a href="cerrar_session.php">Cerrar Sesión</a></li></nav>
     </header>
@@ -35,6 +35,18 @@
         <button type="submit" >Buscar</button>
     </form>
     </div>
+
+        <!--MODAL-->
+
+        <div class="modal"  id="myModal" >
+             <div class="modal-content">
+             <span class="close">&times;</span>
+             <p>Ingresa cantidad</p> 
+            <input type="number" value='numero' > <button>enviar</button> 
+             </div>
+        </div>
+
+
     <?php
     
 // Establecer coneccion
@@ -79,15 +91,15 @@ if (isset($_GET['keyword'])) {
         echo "<tbody>";
         while ($row = $result->fetch_assoc()) {       
            echo "<tr>";
-                    echo "<th><img src='cart.png' height=40 width=40></img></th>";
+                    echo "<th class='openModalBtn'><img src='cart.png' height=40 width=40 ></img></th>";
                     echo "<th>" . $row['Code'] . "</th>";
                     echo "<th>" . $row['Name'] . "</th>";
                     echo "<th>" . $row['Price'] . "</th>";
                     echo "<th>" . $row['Stock'] . "</th>";
             echo "</tr>";
-            echo "</tbody>";
+            
         }
-       
+        echo "</tbody>";
         echo "</table>";
     } else {
         header("Location: notfound.php");
@@ -97,6 +109,6 @@ if (isset($_GET['keyword'])) {
 
 $conn->close();
 ?>
-
+<script src="scripts.js"></script>
 </body>
 </html>
