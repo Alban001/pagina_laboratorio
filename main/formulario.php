@@ -43,7 +43,7 @@
       <tr>
         <td>1</td>
         <td>item</td>
-        <td>item</td>
+        <td id='cantidadIngresado'></td>
         <td></td>
         <td>item</td>
         <th><img src='../img/trash.png' height=30 width=30 ></img></th>

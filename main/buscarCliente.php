@@ -64,7 +64,7 @@ if (isset($_GET['keyword'])) {
     $sql = "SELECT * FROM Customer
     WHERE TaxRegNr LIKE '%$keyword%' OR Name LIKE  '%$keyword%'
     GROUP BY Code";
-    echo $result;
+    
     $result = $conn->query($sql);
 
 

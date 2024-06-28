@@ -92,9 +92,9 @@ if (isset($_GET['keyword'])) {
         while ($row = $result->fetch_assoc()) {       
            echo "<tr>";
                     echo "<th class='openModalBtn'><img src='../img/cart.png' height=40 width=40 ></img></th>";
-                    echo "<th>" . $row['Code'] . "</th>";
-                    echo "<th>" . $row['Name'] . "</th>";
-                    echo "<th>" . $row['Price'] . "</th>";
+                    echo "<th id='code'>" . $row['Code'] . "</th>";
+                    echo "<th id='des'>" . $row['Name'] . "</th>";
+                    echo "<th id='precio'>" . $row['Price'] . "</th>";
                     echo "<th>" . $row['Stock'] . "</th>";
             echo "</tr>";
             
